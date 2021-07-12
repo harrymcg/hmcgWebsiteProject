@@ -22,13 +22,13 @@ body {
 
 ul {
   font-family: helvetica;
-  text-decoration: line-through;
 }
 li {
   list-style: circle;
 }
 .list {
   list-style: square;
+  text-decoration: line-through;
 }
 .btn {
   position: absolute;
