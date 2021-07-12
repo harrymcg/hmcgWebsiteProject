@@ -3,36 +3,58 @@ Testing whether I've created as a new branch
 */
 
 :root {
-    --green: #00FF00;
-    --white: #ffffff;
-    --black: #000000;
-    --blue-light: #9AF7FB;
+  --green: #37fe94;
+  --white: #ffffff;
+  --black: #000000;
+  --blue-light: #9af7fb;
+  --contrastPurple: #d684eb;
+  /*  --btnBg: #d684eb; */
 }
 
 * {
-    color: var(--fontColor);
-    font-family: helvetica;
+  color: var(--fontColor);
+  font-family: helvetica;
 }
 
 body {
-    background: var(--bg);
+  background: var(--bg);
 }
 
 ul {
-    font-family: helvetica;
+  font-family: helvetica;
+  text-decoration: line-through;
 }
 li {
-    list-style: circle;
+  list-style: circle;
 }
 .list {
-    list-style: square;
+  list-style: square;
+}
+.btn {
+  position: absolute;
+  top: 20px;
+  left: 250px;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: none;
+  color: var(--btnFontColor);
+  background-color: var(--btnBg);
+  font-weight: bold;
+}
+.btn:focus {
+  outline-style: none;
 }
 
 .light-theme {
-    --bg: var(--green);
-    --fontColor: var(--black);
+  --bg: var(--green);
+  --fontColor: var(--black);
+  --btnBg: var(--contrastPurple);
+  --btnFontColor: var(--black);
 }
 .dark-theme {
-    --bg: var(--black);
-    --fontColor: var(--green);
+  --bg: var(--black);
+  --fontColor: var(--green);
+  --btnBg: var(--contrastPurple);
+  --btnFontColor: var(--black);
 }
